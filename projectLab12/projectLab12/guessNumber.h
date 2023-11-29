@@ -6,7 +6,7 @@ void GuessNumMain() {
 	setlocale(LC_ALL, "ru");
 	srand(time(NULL));
 	int number = rand() % 2000 + 1,
-		countOfHelp = 6,
+		countOfHelp = 10,
 		enterNumber,
 		countTry = 3,
 		help,

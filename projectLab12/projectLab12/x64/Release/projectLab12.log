@@ -1,0 +1,11 @@
+﻿  Menu.cpp
+D:\repos\FoSE1_1\projectLab12\projectLab12\guessNumber.h(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\repos\FoSE1_1\projectLab12\projectLab12\snake.h(31,14): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+D:\repos\FoSE1_1\projectLab12\projectLab12\snake.h(31,17): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+D:\repos\FoSE1_1\projectLab12\projectLab12\snake.h(234,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\repos\FoSE1_1\projectLab12\projectLab12\Menu.cpp(7,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 30 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  projectLab12.vcxproj -> D:\repos\FoSE1_1\projectLab12\x64\Release\projectLab12.exe

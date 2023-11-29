@@ -1,7 +1,7 @@
 ﻿  Menu.cpp
-D:\repos\FoSE_1_1\projectLab12\projectLab12\guessNumber.h(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\repos\FoSE_1_1\projectLab12\projectLab12\snake.h(34,14): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
-D:\repos\FoSE_1_1\projectLab12\projectLab12\snake.h(34,17): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
-D:\repos\FoSE_1_1\projectLab12\projectLab12\snake.h(246,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\repos\FoSE_1_1\projectLab12\projectLab12\Menu.cpp(7,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  projectLab12.vcxproj -> D:\repos\FoSE_1_1\projectLab12\x64\Debug\projectLab12.exe
+D:\repos\FoSE1_1\projectLab12\projectLab12\guessNumber.h(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\repos\FoSE1_1\projectLab12\projectLab12\snake.h(31,14): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+D:\repos\FoSE1_1\projectLab12\projectLab12\snake.h(31,17): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+D:\repos\FoSE1_1\projectLab12\projectLab12\snake.h(234,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\repos\FoSE1_1\projectLab12\projectLab12\Menu.cpp(7,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  projectLab12.vcxproj -> D:\repos\FoSE1_1\projectLab12\x64\Debug\projectLab12.exe

@@ -26,6 +26,7 @@ void main() {
 			GuessNumMain();
 			break;
 		case '3':
+			cout << "Thanks for coming!" << endl;
 			break;
 		}
 	} while (choice != 3);

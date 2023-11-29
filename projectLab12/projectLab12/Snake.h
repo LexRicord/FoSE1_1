@@ -11,7 +11,6 @@ using namespace std;
 
 HANDLE hConsole;
 
-
 bool gameOver;
 const int width = 20; //ширина поля
 const int height = 20; //высота поля
@@ -21,13 +20,11 @@ int nTail;
 enum Edirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
 Edirection dir;
 
-//void setColor(int background, int text)
-//{
-//	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-//	SetConsoleTextAttribute(hStdOut, (WORD)((background << 4) | text));
-//}
-
-
+void setColor(int background, int text)
+{
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hStdOut, (WORD)((background << 4) | text));
+}
 
 void gotoxy(int x, int y)
 {
@@ -38,7 +35,7 @@ void gotoxy(int x, int y)
 void showLogo()
 {
 	gotoxy(50, 15);
-	cout << "S N A K E" << endl;
+	cout << "SNAKEMAN" << endl;
 	Sleep(1200);
 }
 
@@ -50,7 +47,6 @@ void showLose()
 }
 
 void showMenu() {
-	/*setColor(1, 6);*/
 	system("cls"); //отчистка экрана
 	cout << "New game" << endl;
 	cout << "Instruction" << endl;
@@ -72,14 +68,11 @@ void setup()
 
 void draw()
 {
-	system("cls"); //очищает терминал при вызове функции draw
-
-	/*setColor(1, 6);*/
-
+	system("cls");
+	
 	for (int i = 0; i < width + 1; i++) //верхняя граница
 		cout << "#";
 	cout << endl;
-
 
 	for (int i = 0; i < height; i++) //боковые границы
 	{
@@ -195,11 +188,6 @@ void logic()
 		break;
 	}
 
-	/*if (x>width || x<0 || y>height || y<0)
-	{
-		gameOver = true;
-	}*/
-
 	if (x >= width - 1)
 	{
 		x = 0;
@@ -244,9 +232,8 @@ void SnakeMain()
 {
 	setlocale(LC_ALL, "Rus");
 	srand(time(NULL));
-	system("color F3"); //backgroud**text**
+	setColor(0, 7);
 	system("cls"); //очистка экрана 
-
 	showLogo(); //вывод лого игры
 
 	const int num_menu_items = 4;
@@ -269,8 +256,6 @@ void SnakeMain()
 		//переход курсора к выбраннному пункту меню
 		gotoxy(0, activeMenuItem);
 
-		//получение кода нажатой клавиши
-		//при нажатии стрелок сначала идёт 224 и потом код клавиши стрелки
 		ch = _getch();
 		if (ch == 224) //два кода в буфер присылается, одно из них - 224
 		{
@@ -302,15 +287,14 @@ void SnakeMain()
 				}
 			}
 
-
 			else if (activeMenuItem == 1)
 			{
 				system("cls");
 				cout << "Instruction:" << endl;
 				cout << "Используйте клавиши 'w', 's', 'd', 'a' для перемещения," << endl;
-				cout << "Для выxода из игры используйте клавишу 'Esc';" << endl << endl;
-				cout << "Цель игры - собрать как можно больше *, внизу отоброжается ваш текущий счёт," << endl;
-				cout << "В случае, если вы дотронитесь до хвоста змейки - вы проиграете!\n\n";
+				cout << "Для выxода из главного меню используйте клавишу 'Esc', для выхода из игровой сессии 'x';" << endl << endl;
+				cout << "Цель игры - собрать как можно больше очков '*', внизу отоброжается текущий счёт," << endl;
+				cout << "В случае, если вы дотронитесь до хвоста змейки - вы проиграете! Резко нажимать клавишу противоположную текущему движению - также плохая идея!\n\n";
 				system("pause");
 			}
 
