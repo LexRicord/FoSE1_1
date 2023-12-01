@@ -13,7 +13,7 @@ void main() {
 	{
 		system("cls");
 		cout << "Выберите игру" << endl;
-		cout << "1 - Змейка" << endl;
+		cout << "1 - Змейка 'Snakeman'" << endl;
 		cout << "2 - Угадать цифру" << endl;
 		cout << "3 - Выход" << endl;
 		cin >> choice;
@@ -29,6 +29,6 @@ void main() {
 			cout << "Thanks for coming!" << endl;
 			break;
 		}
-	} while (choice != 3);
+	} while (choice != '3');
 	system("pause");
 }

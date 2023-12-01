@@ -282,8 +282,6 @@ void SnakeMain()
 					draw();
 					input();
 					logic();
-
-
 				}
 			}
 
